@@ -54,12 +54,12 @@ CONFIG_PACKAGE_luci-theme-design=y
 #CONFIG_PACKAGE_luci-app-jellyfin=y
 
 # 易有云
-#CONFIG_PACKAGE_luci-app-linkease=y
+CONFIG_PACKAGE_luci-app-linkease=y
 
 " >> .config
 
 # 修改默认IP
-sed -i 's/192.168.1.1/192.168.0.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.2.99/g' package/base-files/files/bin/config_generate
 
 # 修改默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
