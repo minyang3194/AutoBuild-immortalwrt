@@ -124,3 +124,6 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
+# 8-增固件连接数
+sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
