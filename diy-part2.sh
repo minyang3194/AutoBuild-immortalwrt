@@ -26,10 +26,10 @@ function git_sparse_clone() {
 
 # 添加额外插件
 git clone -b js --single-branch https://github.com/gngpp/luci-theme-design package/luci-theme-design
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-# git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
-# git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-aliddns
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-autotimeset
@@ -58,7 +58,7 @@ CONFIG_PACKAGE_luci-theme-design=y
 #CONFIG_PACKAGE_luci-app-jellyfin=y
 
 # 易有云
-CONFIG_PACKAGE_luci-app-linkease=y
+#CONFIG_PACKAGE_luci-app-linkease=y
 
 # autotimeset
 CONFIG_PACKAGE_luci-app-autotimeset=y
@@ -75,7 +75,7 @@ CONFIG_PACKAGE_luci-app-fileassistant
 " >> .config
 
 # 修改默认IP
-sed -i 's/192.168.1.1/192.168.2.99/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.0.2/g' package/base-files/files/bin/config_generate
 
 # 修改默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
