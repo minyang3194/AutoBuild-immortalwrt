@@ -41,8 +41,6 @@ git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-file
 chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
 $GITHUB_WORKSPACE/preset-clash-core.sh
 
-
-
 echo "
 # 主题
 CONFIG_PACKAGE_luci-theme-design=y
