@@ -32,7 +32,7 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 # git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-autoeimeset
+git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-autoeimeset
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-advanced
 git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-socat
 
