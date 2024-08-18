@@ -58,7 +58,7 @@ CONFIG_PACKAGE_luci-theme-design=y
 #CONFIG_PACKAGE_luci-app-jellyfin=y
 
 # 易有云
-CONFIG_PACKAGE_luci-app-linkease=y
+#CONFIG_PACKAGE_luci-app-linkease=y
 
 # autotimeset
 CONFIG_PACKAGE_luci-app-autotimeset=y
