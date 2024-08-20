@@ -32,10 +32,10 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 #git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-pushbot
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin luci-lib-taskd luci-lib-xterm taskd
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease linkease ffmpeg-remux
-git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-autotimeset
-git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-advanced
-git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-socat
-git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-fileassistant
+#git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-autotimeset
+#git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-advanced
+#git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-socat
+#git_sparse_clone main https://github.com/sirpdboy/sirpdboy-package luci-app-fileassistant
 
 # 加入OpenClash核心
 chmod -R a+x $GITHUB_WORKSPACE/preset-clash-core.sh
@@ -61,16 +61,16 @@ CONFIG_PACKAGE_luci-theme-design=y
 #CONFIG_PACKAGE_luci-app-linkease=y
 
 # autotimeset
-CONFIG_PACKAGE_luci-app-autotimeset=y
+#CONFIG_PACKAGE_luci-app-autotimeset=y
 
 # advanced
-CONFIG_PACKAGE_luci-app-advanced=y
+#CONFIG_PACKAGE_luci-app-advanced=y
 
 # socat
-CONFIG_PACKAGE_luci-app-socat=y
+#CONFIG_PACKAGE_luci-app-socat=y
 
 # fileassistant
-CONFIG_PACKAGE_luci-app-fileassistant
+#CONFIG_PACKAGE_luci-app-fileassistant
 
 " >> .config
 
