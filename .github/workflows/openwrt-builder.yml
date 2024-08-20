@@ -75,6 +75,16 @@ jobs:
         mixkey: x86-64-${{ env.REPO_BRANCH }}
         prefix: ${{ github.workspace }}/openwrt
 
+    - name: luci-app-advanced
+      run: |
+        cd openwrt/package
+        git clone https://github.com/sirpdboy/luci-app-advanced
+
+    - name: luci-app-autotimeset
+      run: |
+        cd openwrt/package
+        git clone https://github.com/sirpdboy/luci-app-autotimeset
+
     - name: 加载自定义 feeds
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf
