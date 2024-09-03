@@ -50,7 +50,7 @@ echo "
 #CONFIG_PACKAGE_luci-app-jellyfin=y
 
 # 易有云
-CONFIG_PACKAGE_luci-app-linkease=y
+#CONFIG_PACKAGE_luci-app-linkease=y
 
 " >> .config
 
